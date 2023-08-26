@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Available Endpoints</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        table {
+            margin: 0 auto;
+            width: 70%;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Available GET Endpoint Samples</h1>
+    <table>
+        <tr>
+            <th>Example</th>
+            <th>Explanation</th>
+        </tr>
+        <tr>
+            <td><a href="/1">/1</a></td>
+            <td>Access the calculator endpoint with a single number</td>
+        </tr>
+        <tr>
+            <td><a href="/5/PLus/3">/5/PLus/3</a></td>
+            <td>Adds two numbers: 5 and 3 . This code includes both uppercase and lowercase versions </td>
+        </tr>
+        <tr>
+            <td><a href="/3/minus/5">/3/minus/5</a></td>
+            <td>Subtracts 5 from 3</td>
+        </tr>
+        <tr>
+            <td><a href="/4/INTO/2">/4/INTO/2</a></td>
+            <td>Multiplies 4 by 2</td>
+        </tr>
+        <tr>
+            <td><a href="/8/by/4">/8/by/4</a></td>
+            <td>Divides 8 by 4</td>
+        </tr>
+        <tr>
+            <td><a href="/2/pow/3">/2/pow/3</a></td>
+            <td>2 Power 3</td>
+        </tr>
+        <tr>
+            <td><a href="/10/mod/3">/10/mod/3</a></td>
+            <td>10 Modulus 3 .Returns the remainder of the division</td>
+        </tr>
+        <tr>
+            <td><a href="/3/into/5/plus/8/into/6">/3/into/5/plus/8/into/6</a></td>
+            <td>Performs multiple operations: (3 * 5) + (8 * 6)</td>
+        </tr>
+        <tr>
+            <td><a href="/history">/history</a></td>
+            <td>Access the history page to view past calculations (limit: 20)</td>
+        </tr>
+        <tr>
+            <td><a href="/history?page=2">/history?page=2</a></td>
+            <td>Pagination for second page</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+

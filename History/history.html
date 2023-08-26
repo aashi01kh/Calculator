@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>History Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th.question {
+            background-color: #111;
+            color: white;
+        }
+
+        th.answer {
+            background-color: #111;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .pagination {
+            margin-top: 20px;
+        }
+
+        .pagination a {
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+
+        .pagination a:hover {
+            background-color: #0056b3;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <h1>History Data</h1>
+    <table>
+        <tr>
+            <th class="question">Question</th>
+            <th class="answer">Answer</th>
+        </tr>
+        <% historyData.forEach(entry => { %>
+            <tr>
+                <td><strong class="question">Question:</strong> <%= entry.question %></td>
+                <td><strong class="answer">Answer:</strong> <%= entry.answer %></td>
+            </tr>
+        <% }); %>
+    </table>
+    <div class="pagination">
+        <% if (currentPage > 1) { %>
+            <a href="/history?page=<%= currentPage - 1 %>">Previous</a>
+        <% } %>
+        <% if (currentPage < totalPages) { %>
+            <a href="/history?page=<%= currentPage + 1 %>">Next</a>
+        <% } %>
+    </div>
+</body>
+</html>
