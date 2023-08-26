@@ -66,10 +66,10 @@ The app features a history page that displays the most recent calculations. The 
 ## Screenshots
 
 ### Calculator Interface
-![Calculator Interface](cal1.png)
+![Calculator Interface](cal2.png)
 
 ### History Page
-![History Page](cal2.png)
+![History Page](cal1.png)
 
 ## Usage
 
